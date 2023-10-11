@@ -12,19 +12,6 @@ Dataset components
 
 ## Dataset
 The dataset is in data/agument.json 
-
-#### Robot type
-- cooking robot
-- cleaning robot
-- massage robot
-
-#### Uncertainty label
-- 0: clear
-- 1: ambiguious
-- 2: infeasible
-- 3: ignore
-
-#### Samples
 The dataset is consisted of 
 ```
 {
@@ -41,8 +28,28 @@ The dataset is consisted of
             "TASK": Robot Type
         }
 }
-
 ```
+#### Scene
+Description of the environment
+- **floorplan**: list of area categories in the environment
+- **objects**: list of objects seen in the environment
+- **people**: list of peoeple in the scene. Each person is decripted as the color of the cloth wearing
+
+#### Goal
+Language instruction (command) given to the robot
+
+#### Robot type
+- cooking robot
+- cleaning robot
+- massage robot
+
+#### Uncertainty label
+- 0: clear
+- 1: ambiguious
+- 2: infeasible
+- 3: ignore
+
+#### Examples
 for example, 
 ```
 "2": {
